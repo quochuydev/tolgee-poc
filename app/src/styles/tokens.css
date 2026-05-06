@@ -1,0 +1,65 @@
+/*
+ * Design tokens — single source of truth for layout & visual styling.
+ * Edit values here to restyle the whole app.
+ *
+ * Visual language: light admin dashboard inspired by "Able Pro".
+ * White surfaces, soft cool-tinted background, indigo primary,
+ * generous whitespace, rounded-xl cards with thin borders (no shadow),
+ * pastel icon tiles for stat cards.
+ *
+ * Tokens are exposed to Tailwind via @theme so utilities like
+ *   bg-surface, text-muted, w-sidebar, h-header, bg-tile-blue
+ * resolve to these custom properties.
+ */
+
+@theme {
+  /* Neutrals */
+  --color-bg: oklch(97.5% 0.012 270);
+  --color-surface: oklch(100% 0 0);
+  --color-surface-muted: oklch(96% 0.008 260);
+  --color-border: oklch(92% 0.008 260);
+  --color-fg: oklch(25% 0.02 260);
+  --color-muted: oklch(50% 0.015 260);
+  --color-subtle: oklch(70% 0.012 260);
+
+  /* Brand */
+  --color-primary: oklch(63% 0.19 263);
+  --color-primary-fg: oklch(100% 0 0);
+  --color-primary-soft: oklch(95% 0.04 263);
+
+  /* Semantic accents */
+  --color-success: oklch(70% 0.16 155);
+  --color-warning: oklch(78% 0.15 70);
+  --color-danger: oklch(63% 0.22 25);
+
+  /* Sidebar (light theme) */
+  --color-sidebar-bg: oklch(100% 0 0);
+  --color-sidebar-fg: oklch(25% 0.02 260);
+  --color-sidebar-muted: oklch(48% 0.015 260);
+  --color-sidebar-section: oklch(62% 0.012 260);
+  --color-sidebar-hover: oklch(96% 0.008 260);
+
+  /* Pastel icon tiles for stat cards */
+  --color-tile-blue: oklch(94% 0.04 270);
+  --color-tile-blue-fg: oklch(58% 0.18 270);
+  --color-tile-orange: oklch(95% 0.05 65);
+  --color-tile-orange-fg: oklch(64% 0.16 50);
+  --color-tile-green: oklch(94% 0.06 155);
+  --color-tile-green-fg: oklch(58% 0.14 155);
+  --color-tile-rose: oklch(94% 0.04 20);
+  --color-tile-rose-fg: oklch(60% 0.18 25);
+
+  /* Layout dimensions */
+  --spacing-sidebar: 16rem;             /* 256px expanded */
+  --spacing-sidebar-collapsed: 4.25rem; /* 68px  collapsed */
+  --spacing-header: 4rem;               /* 64px  */
+
+  /* Radii */
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  /* Typography */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Inter", "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+}

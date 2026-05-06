@@ -1,0 +1,22 @@
+{
+  "users": {
+    "title": "Benutzer",
+    "subtitle": "Verwalte die Mitglieder deines Workspaces.",
+    "table": {
+      "name": "Name",
+      "email": "E-Mail",
+      "role": "Rolle",
+      "status": "Status"
+    },
+    "status": {
+      "active": "Aktiv",
+      "invited": "Eingeladen",
+      "disabled": "Deaktiviert"
+    },
+    "role": {
+      "admin": "Administrator",
+      "editor": "Bearbeiter",
+      "viewer": "Betrachter"
+    }
+  }
+}

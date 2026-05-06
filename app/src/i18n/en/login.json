@@ -1,0 +1,10 @@
+{
+  "login": {
+    "title": "Sign in",
+    "subtitle": "Use any username and password to continue.",
+    "username": "Username",
+    "password": "Password",
+    "submit": "Sign in",
+    "error": "Please fill in both fields."
+  }
+}

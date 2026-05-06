@@ -1,0 +1,10 @@
+{
+  "login": {
+    "title": "Anmelden",
+    "subtitle": "Verwende einen beliebigen Benutzernamen und ein Passwort.",
+    "username": "Benutzername",
+    "password": "Passwort",
+    "submit": "Anmelden",
+    "error": "Bitte fülle beide Felder aus."
+  }
+}

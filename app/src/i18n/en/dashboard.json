@@ -1,0 +1,16 @@
+{
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Overview of activity for the last 7 days.",
+    "card": {
+      "users": "Total users",
+      "sessions": "Sessions",
+      "revenue": "Revenue",
+      "downloads": "Downloads"
+    },
+    "chart": {
+      "trafficTitle": "Traffic",
+      "revenueTitle": "Revenue by day"
+    }
+  }
+}

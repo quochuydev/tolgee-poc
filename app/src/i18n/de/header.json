@@ -1,0 +1,21 @@
+{
+  "header": {
+    "search": "Suchen…",
+    "notifications": {
+      "title": "Benachrichtigungen",
+      "justNow": "Gerade eben",
+      "minutesAgo": "Vor 5 Minuten",
+      "hoursAgo": "Vor 2 Stunden",
+      "sample": {
+        "welcome": "Willkommen bei Tolgee POC",
+        "report": "Wochenbericht ist bereit",
+        "invite": "Clara hat deine Einladung angenommen"
+      }
+    },
+    "profile": {
+      "title": "Profil",
+      "account": "Konto",
+      "signedInAs": "Angemeldet als"
+    }
+  }
+}

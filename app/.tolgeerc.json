@@ -1,0 +1,15 @@
+{
+  "apiUrl": "http://localhost:8200",
+  "projectId": 2,
+  "format": "JSON_TOLGEE",
+  "push": {
+    "files": [
+      { "path": "src/i18n/en/*.json", "language": "en" },
+      { "path": "src/i18n/de/*.json", "language": "de" }
+    ],
+    "forceMode": "OVERRIDE"
+  },
+  "pull": {
+    "path": "src/i18n"
+  }
+}

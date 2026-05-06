@@ -1,0 +1,21 @@
+{
+  "header": {
+    "search": "Search…",
+    "notifications": {
+      "title": "Notifications",
+      "justNow": "Just now",
+      "minutesAgo": "5 minutes ago",
+      "hoursAgo": "2 hours ago",
+      "sample": {
+        "welcome": "Welcome to Tolgee POC",
+        "report": "Weekly report is ready",
+        "invite": "Clara accepted your invite"
+      }
+    },
+    "profile": {
+      "title": "Profile",
+      "account": "Account",
+      "signedInAs": "Signed in as"
+    }
+  }
+}

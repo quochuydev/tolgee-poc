@@ -1,0 +1,16 @@
+{
+  "dashboard": {
+    "title": "Übersicht",
+    "subtitle": "Aktivität der letzten 7 Tage im Überblick.",
+    "card": {
+      "users": "Benutzer gesamt",
+      "sessions": "Sitzungen",
+      "revenue": "Umsatz",
+      "downloads": "Downloads"
+    },
+    "chart": {
+      "trafficTitle": "Traffic",
+      "revenueTitle": "Umsatz pro Tag"
+    }
+  }
+}

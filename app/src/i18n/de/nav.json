@@ -1,0 +1,10 @@
+{
+  "nav": {
+    "section": {
+      "menu": "Menü"
+    },
+    "dashboard": "Übersicht",
+    "users": "Benutzer",
+    "logout": "Abmelden"
+  }
+}
