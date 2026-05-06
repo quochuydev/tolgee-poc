@@ -1,6 +1,6 @@
 {
   "apiUrl": "http://localhost:8200",
-  "projectId": 2,
+  "projectId": 0,
   "format": "JSON_TOLGEE",
   "push": {
     "files": [

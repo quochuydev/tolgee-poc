@@ -1,4 +1,10 @@
-import { DevTools, FormatSimple, Tolgee } from '@tolgee/react'
+import {
+  DevTools,
+  FormatSimple,
+  LanguageDetector,
+  LanguageStorage,
+  Tolgee,
+} from '@tolgee/react'
 
 const apiUrl = import.meta.env.VITE_APP_TOLGEE_API_URL as string | undefined
 const apiKey = import.meta.env.VITE_APP_TOLGEE_API_KEY as string | undefined
@@ -20,7 +26,10 @@ async function loadLanguage(files: Record<string, () => Promise<JsonModule>>) {
   return Object.assign({}, ...modules.map((m) => m.default)) as Record<string, unknown>
 }
 
-const base = Tolgee().use(FormatSimple())
+const base = Tolgee()
+  .use(FormatSimple())
+  .use(LanguageStorage())  // persists chosen language to localStorage
+  .use(LanguageDetector()) // picks browser language on first visit
 
 export const tolgee = (useDev ? base.use(DevTools()) : base).init({
   availableLanguages: ['en', 'de'],

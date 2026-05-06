@@ -2,6 +2,8 @@
 
 A small TanStack Start app that demonstrates [Tolgee](https://tolgee.io/) i18n with English + German.
 
+> **Branch workflow:** `main` (dev) and `staging` use **two separate Tolgee projects**. Managers edit copy on `staging`; developers ship code on `main`. See [`docs/WORKFLOW.md`](docs/WORKFLOW.md) for the full guide.
+
 ## Setup
 
 ### 1. Start the Tolgee server
@@ -56,11 +58,11 @@ Log in with anything. Switch EN ↔ DE in the header. **Hold `Alt` and click any
 
 ## Daily workflow
 
-| Task | Command |
-|---|---|
-| Push local JSON → Tolgee | `TOLGEE_API_KEY=… npm run i18n:push` |
-| Pull Tolgee → local JSON | `TOLGEE_API_KEY=… npm run i18n:pull` |
-| Run app | `npm run dev` |
+| Task                     | Command                             |
+| ------------------------ | ----------------------------------- |
+| Push local JSON → Tolgee | `TOLGEE_API_KEY= npm run i18n:push` |
+| Pull Tolgee → local JSON | `TOLGEE_API_KEY= npm run i18n:pull` |
+| Run app                  | `npm run dev`                       |
 
 Set `TOLGEE_API_KEY` in your shell profile to skip the prefix.
 
@@ -83,10 +85,10 @@ The Vite loader in `app/src/lib/tolgee.ts` discovers files via `import.meta.glob
 ## Using translations in code
 
 ```tsx
-import { useTranslate } from '@tolgee/react'
+import { useTranslate } from "@tolgee/react";
 
-const { t } = useTranslate()
-return <h1>{t('dashboard.title')}</h1>
+const { t } = useTranslate();
+return <h1>{t("dashboard.title")}</h1>;
 ```
 
 Every user-facing string must come from `t()` — see `.claude/rules/layout-styling.md`.
